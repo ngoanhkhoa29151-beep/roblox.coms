@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Website của Khoa</title>
+
+<style>
+body{
+background-color: lightblue;
+text-align:center;
+font-family:Arial;
+}
+
+button{
+background-color:orange;
+padding:10px;
+font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Xin chào!</h1>
+<p>Đây là website đầu tiên của mình.</p>
+
+<img src="https://picsum.photos/200">
+
+<br><br>
+
+<button onclick="hello()">Bấm thử đi</button>
+
+<script>
+function hello(){
+alert("Bạn vừa bấm nút!");
+}
+</script>
+
+</body>
+
+</html>
+2️⃣ Lưu file
