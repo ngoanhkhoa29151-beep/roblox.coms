@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>System Scan</title>
+<style>
+body{
+background:black;
+color:lime;
+font-family:monospace;
+text-align:center;
+margin-top:100px;
+}
+</style>
+</head>
+<body>
+
+<h1>Scanning device...</h1>
+<p id="text"></p>
+
+<script>
+let messages=[
+"Accessing system files...",
+"Downloading data...",
+"Sending to server...",
+"Installing backdoor...",
+"Complete!"
+]
+
+let i=0
+function next(){
+if(i<messages.length){
+document.getElementById("text").innerHTML+=messages[i]+"<br>"
+i++
+setTimeout(next,1000)
+}else{
+setTimeout(()=>{
+document.body.innerHTML="<h1>😂 Bạn vừa bị troll!</h1>"
+},2000)
+}
+}
+next()
+</script>
+
+</body>
+</html>
